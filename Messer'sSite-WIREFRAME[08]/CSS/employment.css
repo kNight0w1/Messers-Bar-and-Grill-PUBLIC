@@ -1,0 +1,921 @@
+@font-face { font-family: solaris; src: url(../fonts/Solaris/Solaris.ttf);}
+@font-face { font-family: neo-latina; src: url(../fonts/neo-latina-demo-font-ffp/neo-latina-demo-FFP.ttf);}
+@font-face { font-family: vegapunk; src: url(../fonts/Vegapunk-Free.otf) format("opentype");}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: antiquewhite;
+    font-family: neo-latina;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+:root {
+    font-size: 16px;
+    --nav-total: calc(var(--nav-height) + var(--bottom-nav-height));
+    --center-strip-width: 75vw;
+    --banner-width: 12.5vw;
+    --messers-blue: rgba(1, 42, 58, 0.884);
+    --messers-purple: rgba(48, 1, 34, 0.945);
+    --nav-height: 14.409221902017292vh;
+    --nav-energy-height: 3.602305475504323vh;
+    --section-height: calc(100vh - var(--nav-total));
+    --section-margin: 15vh;
+    --hr-width: 55%;
+    --paragraph-width: 66%;
+    --paragraph-font-size: 3.7vh;
+    --photo-gal-height: var(--section-height);
+    --swiper-width: 25%;
+    --swiper-side-pos: 1%;
+    --menu-font-size: 8.5vw;
+    --slide-height: 18.626373626373628vw;
+    --map-container-width: 46%;
+    --hours-h1-font-size: 3rem;
+    --hours-ul-font-size: 1.2rem;
+    --hours-p-font-size: 1rem;
+    --footer1-height: 4.322766570605188vh;
+    --footer1-margin: 0;
+    --fa-font-size: 3.7vh;
+    --social-icons-width: 5%;
+    --bottom-nav-height: 0vh;
+    --bottom-nav-font-size: 1.2rem;
+}
+
+body {
+    background: url(../IMG/test/StarrySky[01].jpeg);
+}
+
+/*SideBanners*/ /*SideBanners*/ /*SideBanners*/ /*SideBanners*/ 
+.left-strip {
+    position: fixed;
+    height: 100%;
+    width: var(--banner-width, 12.5vw);
+    background-image: url(../IMG/test/StarrySky[09].gif);
+}
+.right-strip {
+    position: fixed;
+    right: 0;
+    height: 100%;
+    width: var(--banner-width, 12.5vw);
+    background-image: url(../IMG/test/StarrySky[09].gif);
+}
+/*SideBanners*/ /*SideBanners*/ /*SideBanners*/ /*SideBanners*/
+
+.center-strip {
+    border: 2.33px dashed black;
+    width: var(--center-strip-width, 75vw);
+    margin: auto auto;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/**NAVBAR**/    /**NAVBAR**/    /**NAVBAR**/    /**NAVBAR**/
+.navbar-container {
+    position: fixed;
+    top: 0;
+    border: 1px solid black;
+    width: var(--center-strip-width, 75vw);
+    height: var(--nav-height, 14.409221902017292vh);
+    padding: 0;
+    z-index: 10;
+    font-size: 1.6rem;
+    text-shadow: 0px 0px 8px rgb(255, 255, 255);
+}
+
+.nav-energy {
+    position: fixed;
+    border: 1px solid pink;
+    height: var(--nav-energy-height, 3.602305475504323vh);
+    width: var(--center-strip-width, 75vw);
+    right: 12.5%;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(../IMG/test/StarrySky[12].gif);
+    background-position: center;
+}
+
+.navbar {
+    border: 2px solid green;
+    width: 100%;
+    height: 75%;
+    position: relative;
+    top: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(var(--messers-blue, rgba(1, 42, 58, 0.884)), var(--messers-purple, rgba(48, 1, 34, 0.945)));
+}
+
+.nav-left {
+    border: 2px solid black;
+    width: 39%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo-container {
+    position: relative;
+    margin: auto auto;
+    border: 2px dashed rgb(20, 199, 35) !important;
+    width: 22%;
+    height: 100%;
+    overflow: visible;
+}
+
+.logo-container .logo-link {
+    position: absolute;
+    width: 90%;
+    height: 125%;
+    left: 5%;
+    z-index: 10;
+}
+
+.logo {
+    position: relative;
+    margin: auto auto;
+    width: 100%;
+    height: auto;
+    bottom: 4vw;
+    right: 1.5%;
+}
+
+.nav-right {
+    border: 2px solid black;
+    width: 39%;
+    display: flex;
+    justify-content: space-evenly;
+}
+/**NAVBAR**/    /**NAVBAR**/    /**NAVBAR**/    /**NAVBAR**/
+
+
+
+/***HERO***/    /***HERO***/    /***HERO***/    /***HERO***/
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 77vh;
+    top: 14vh;
+}
+
+  .hero-container .gradient {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.718), rgba(0, 0, 0, 0.759));
+}
+
+  .hero-container img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+  .hero-container h1 {
+    position: relative;
+    color: rgb(206, 190, 190);
+    text-shadow: 2px 2px 100px rgb(255, 255, 255);
+    font-size: 10rem;
+    z-index: 0;
+    text-align: center;
+    bottom: 65%;
+}
+/***HERO***/    /***HERO***/    /***HERO***/    /***HERO***/
+
+
+
+/***MAIN***/    /***MAIN***/    /***MAIN***/    /***MAIN***/
+.some-content {
+    border: 4px solid rgb(117, 1, 1);
+    position: relative;
+    top: 14vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../IMG/test/vaporwave[06].jpg);
+    padding-bottom: 30vh;
+
+}
+
+.box {
+    padding-top: 1.5vh;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 0.7vh;
+    font-size: 2rem;
+}
+
+b {
+    font-size: 1.5rem;
+}
+
+hr {
+    width: 50%;
+    margin: auto auto;
+    border-radius: 100%;
+    margin-bottom: 5vh;
+}
+
+table {
+    margin: auto auto;
+}
+
+table tr td input[type=text] {
+    display: block;
+    margin: auto auto;
+    margin-bottom: 5vh;
+    margin-top: 0.5vh;
+    width: 75%;
+    height: 5vh;
+}
+
+.last-job-input {
+    display: block;
+    margin-top: 5vh;
+}
+
+.last-job-input b {
+    display: inline-block;
+    margin-bottom: 0.5vh;
+}
+
+table tr td {
+    text-align: center;
+    margin-top: 0.5vh;
+}
+
+textarea {
+    margin-top: 0.5vh;
+    margin-bottom: 7vh;
+    width: 75%;
+}
+
+.security-code-input {
+    display: block;
+    margin-top: 5vh;
+}
+
+input, textarea {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.submit {
+    min-width: fit-content;
+    width: 20%;
+    height: 4vh;
+    display: block;
+    margin: auto auto;
+
+}
+
+/***MAIN***/    /***MAIN***/    /***MAIN***/    /***MAIN***/
+
+
+
+/**FOOTER**/   /**FOOTER**/   /**FOOTER**/   /**FOOTER**/
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer1 {
+    width: 100%;
+    height: var(--footer1-height, 4.322766570605188vh);
+    margin-bottom: var(--footer1-margin, 0);
+    text-align: center;
+    border: 1px solid beige;
+}
+
+.social-icons {
+    border: 1px solid white;
+    margin: auto auto;
+    padding-bottom: 0.5%;
+    width: var(--social-icons-width);
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.fa {
+    font-size: var(--fa-font-size, 3.7vh);
+    text-shadow: 0px 0px 7px rgb(255, 255, 255);
+}
+
+.footer2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../IMG/test/Nav/shinyMetal[01].jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.footer2 p {
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+}
+
+.control-bar {
+    display: none;
+}
+/**FOOTER**/   /**FOOTER**/   /**FOOTER**/   /**FOOTER**/
+
+.center-strip, .navbar-container, .navbar, .some-content, .hero-container, .logo-container,
+.nav-left, .nav-right, .messer-who, .PhotoGal, .messer-who h1, .messer-who p, .bottom-section,
+.PhotoGal .swiper, .map-container, .map, .footer1, .social-icons, .phone-number, .hours, .nav-energy {
+    border: 0;
+}
+
+/*PsuedoSelectors*/    /*PsuedoSelectors*/    /*PsuedoSelectors*/
+.navbar-container a:hover {
+    text-shadow: 2px 2px 8px rgb(255, 255, 255);
+    font-weight: 900;
+}
+
+.phone-number a:hover {
+    text-shadow: 2px 2px 8px rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 2.1rem;
+}
+
+.fa:hover {
+    text-shadow: 2px 2px 8px rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 1.8rem;
+}
+/*PsuedoSelectors*/    /*PsuedoSelectors*/    /*PsuedoSelectors*/
+
+
+/*Media Queries*/    /*Media Queries*/    /*Media Queries*/
+/********************HEIGHT > 1200px && 1200px < WIDTH < 2000px*************/
+/**************************** EXTREMELY LARGE DEVICES********************************************/
+@media (min-height: 1200px) and (min-width: 16700px) and (max-width: 2000px) {
+    :root {
+        font-size: 25px;
+        --footer1-height: 4.322766570605188vh;
+        --fa-font-size: 3.5vh;
+        --social-icons-width: 7%;
+        --slide-height: 22vw;
+    }
+
+    .logo {
+        width: 145%;
+        bottom: 6vw;
+        right: 25%;
+    }
+}
+
+@media (min-height: 1200px) and (min-width: 1200px) and (max-width: 1670px) {
+    :root {
+        font-size: 27px;
+        --footer1-height: 4.322766570605188vh;
+        --fa-font-size: 3.3vh;
+        --social-icons-width: 7%;
+    }
+
+    .logo {
+        width: 135%;
+        bottom: 8vw;
+        right: 20%;
+    }
+}
+
+
+/********************1100px < HEIGHT < 1200px && 200px < WIDTH < 2000px**************************/
+/****************************LARGER DEVICES - - LARGE LAPTOPS********************************************/
+@media (min-height:1100px) and (max-height: 1200px) and (min-width: 1800px) and (max-width: 2000px) {
+    :root {
+        font-size: 24px;
+        --fa-font-size: 3.7vh;
+        --section-margin: 10vh;
+    }
+
+    .logo {
+        width: 125%;
+        bottom: 5vw;
+        right: 14.5%;
+    }
+    
+}
+@media (min-height: 1100px) and (max-height: 1200px) and (min-width: 1600px) and (max-width: 1800px) {
+    :root {
+        font-size: 24px;
+        --footer1-height: 4.322766570605188vh;
+        --footer1-margin: 0;
+        --fa-font-size: 3.7vh;
+    }
+
+    .logo {
+        width: 125%;
+        bottom: 5vw;
+        right: 14.5%;
+    }
+}
+@media (min-height: 1100px) and (max-height: 1200px) and (min-width: 1570px) and (max-width: 1600px) {
+    :root {
+        font-size: 24px;
+        --footer1-height: 4.322766570605188vh;
+        --footer1-margin: 0;
+        --fa-font-size: 3.7vh;
+        --social-icons-width: 7%;
+        --section-margin: 10vh;
+    }
+
+    .logo {
+        width: 135%;
+        bottom: 5vw;
+        right: 18.75%;
+    }
+}
+@media (min-height: 1100px) and (max-height: 1200px) and (min-width: 1200px) and (max-width: 1570px) {
+    :root {
+        font-size: 27px;
+        --footer1-height: 4.322766570605188vh;
+        --fa-font-size: 3.7vh;
+        --social-icons-width: 7%;
+        --section-margin: 10vh;
+    }
+
+    .logo {
+        width: 130%;
+        bottom: 8vw;
+        right: 16.5%;
+    }
+}
+@media (min-height: 1100px) and (max-height: 1200px) and (min-width: 1000px) and (max-width: 1200px) {
+    :root {
+        font-size: 23px;
+        --footer1-height: 4.322766570605188vh;
+        --footer1-margin: 0;
+        --fa-font-size: 3.7vh;
+        --social-icons-width: 7%;
+    }
+
+    .logo {
+        width: 140%;
+        bottom: 7vw;
+        right: 21.51%;
+    }
+}
+@media (min-height: 1100px) and (max-height: 1200px) and (min-width: 800px) and (max-width: 1000px) {
+    :root {
+        font-size: 21px;
+        --footer1-height: 4.322766570605188vh;
+        --footer1-margin: 0;
+        --fa-font-size: 3.7vh;
+        --social-icons-width: 9%;
+    }
+
+    .logo {
+        width: 160%;
+        bottom: 7.5vw;
+        right: 32%;
+    }
+}
+@media (min-height: 1100px) and (max-height: 1200px) and (min-width: 700px) and (max-width: 800px) {
+    :root {
+        font-size: 18px;
+        --footer1-height: 4.322766570605188vh;
+        --footer1-margin: 0;
+        --fa-font-size: 3.6vh;
+        --social-icons-width: 13%;
+    }
+
+    .logo {
+        width: 173%;
+        bottom: 7.5vw;
+        right: 37%;
+    }
+}
+@media (min-height: 1100px) and (max-height: 1200px) and (min-width: 600px) and (max-width: 700px) {
+    :root {
+        font-size: 15.9px;
+        --footer1-margin: 0;
+        --fa-font-size: 2.9vh;
+        --social-icons-width: 10%;
+        --section-margin: 15vh;
+        --bottom-nav-font-size: 1.5rem;
+    }
+
+    .logo {
+        width: 235%;
+        bottom: 12vw;
+        right: 70%;
+    }
+}
+@media (min-height: 1100px) and (max-height: 1200px) and (min-width: 400px) and (max-width: 600px) {
+    :root {
+        font-size: 15px;
+        --footer1-margin: 0;
+        --fa-font-size: 3.3vh;
+        --social-icons-width: 15%;
+        --bottom-nav-font-size: 1.2rem;
+    }
+
+    .logo {
+        width: 290%;
+        bottom: 13vw;
+        right: 100%;
+    }
+}
+@media (min-height: 1100px) and (max-height: 1200px) and (min-width: 200px) and (max-width: 400px) {
+    :root {
+        font-size: 11px;
+        --footer1-margin: 0;
+        --fa-font-size: 2.7vh;
+        --social-icons-width: 20%;
+        --bottom-nav-font-size: 1.9rem;
+    }
+
+    .logo {
+        width: 410%;
+        bottom: 20vw;
+        right: 160%;
+    }
+}
+
+
+/********************800px < HEIGHT < 1100px && 200px < WIDTH < 2000px**************************/
+@media (min-height:800px) and (max-height: 1100px) and (min-width: 1800px) and (max-width: 2000px) {
+    :root {
+        font-size: 22px;
+        --fa-font-size: 4vh;
+        --social-icons-width: 7%;
+    }  
+}
+@media (min-height: 800px) and (max-height: 1100px) and (min-width: 1600px) and (max-width: 1800px) {
+    :root {
+        font-size: 23px;
+        --fa-font-size: 4vh;
+        --social-icons-width: 7%;
+    }
+
+    .logo {
+        width: 125%;
+        height: auto;
+        bottom: 5.5vw;
+        right: 14.5%;
+    }
+}
+
+/**Breaks Down here***/ /***** -Reason being: that aspect ratio changes often and
+screen layout changes in accordance causing lots of variety. Only thing I could
+think of was to make sections smaller ********/
+@media (min-height: 1000px) and (max-height: 1100px) and (min-width: 1400px) and (max-width: 1600px) {
+    :root {
+        font-size: 23px;
+        --fa-font-size: 4vh;
+        --social-icons-width: 7%;
+    }
+
+    .logo {
+        width: 125%;
+        height: auto;
+        bottom: 5vw;
+        right: 14.5%;
+    }
+}
+@media (min-height: 1000px) and (max-height: 1100px) and (min-width: 1200px) and (max-width: 1400px) {
+    :root {
+        font-size: 23px;
+        --fa-font-size: 4vh;
+        --social-icons-width: 7%;
+    }
+
+    .logo {
+        width: 125%;
+        height: auto;
+        bottom: 5vw;
+        right: 14.5%;
+    }
+}
+@media (min-height: 800px) and (max-height: 1000px) and (min-width: 1400px) and (max-width: 1600px) {
+    :root {
+        font-size: 23px;
+        --fa-font-size: 4vh;
+        --social-icons-width: 7%;
+    }
+
+    .logo {
+        width: 125%;
+        height: auto;
+        bottom: 5vw;
+        right: 14.5%;
+    }
+}
+@media (min-height: 800px) and (max-height: 1000px) and (min-width: 1200px) and (max-width: 1400px) {
+    :root {
+        font-size: 21px;
+        --fa-font-size: 4vh;
+        --social-icons-width: 7%;
+    }
+
+    .logo {
+        width: 125%;
+        height: auto;
+        bottom: 5vw;
+        right: 14.5%;
+    }
+}
+
+@media (min-height: 800px) and (max-height: 1100px) and (min-width: 1000px) and (max-width: 1200px) {
+    :root {
+        font-size: 21px;
+        --footer1-height: 4.322766570605188vh;
+        --footer1-margin: 0;
+        --fa-font-size: 3.7vh;
+        --social-icons-width: 7%;
+    }
+
+    .logo {
+        width: 125%;
+        height: auto;
+        bottom: 5vw;
+        right: 14.5%;
+    }
+}
+@media (min-height: 800px) and (max-height: 1100px) and (min-width: 800px) and (max-width: 1000px) {
+    :root {
+        font-size: 20px;
+        --fa-font-size: 3.7vh;
+        --social-icons-width: 8%;
+    }
+
+    .logo {
+        width: 145%;
+        bottom: 5.5vw;
+        right: 24%;
+    }
+}
+@media (min-height: 800px) and (max-height: 1100px) and (min-width: 600px) and (max-width: 800px) {
+    :root {
+        font-size: 15.5px;
+        --fa-font-size: 3.7vh;
+        --social-icons-width: 11%;
+        --bottom-nav-font-size: 1.5rem;
+    }
+
+    .logo {
+        width: 200%;
+        bottom: 10vw !important;
+        right: 53%;
+    }
+}
+@media (min-height: 800px) and (max-height: 1100px) and (min-width: 400px) and (max-width: 600px) {
+    :root {
+        font-size: 12px;
+        --footer1-height: 4.322766570605188vh;
+        --footer1-margin: 0.5vh;
+        --fa-font-size: 3.3vh;
+        --social-icons-width: 17%;
+        --bottom-nav-height: 0vh;
+        --bottom-nav-font-size: 1.4rem;
+    }
+
+    .logo {
+        width: 275%;
+        bottom: 14vw !important;
+        right: 90%;
+    }
+}
+@media (min-height: 800px) and (max-height: 1100px) and (min-width: 200px) and (max-width: 400px) {
+    :root {
+        font-size: 9px;
+        --footer1-height: 4.322766570605188vh;
+        --footer1-margin: 0.5vh;
+        --fa-font-size: 2.9vh;
+        --social-icons-width: 17%;
+        --bottom-nav-height: 0vh;
+        --bottom-nav-font-size: 1.6rem;
+    }
+
+    .logo {
+        width: 410%;
+        bottom: 20vw !important;
+        right: 160%;
+    }
+}
+
+
+
+/********************HEIGHT < 800px && 200px < WIDTH < 2000px*************/
+/****************************SMALLEST DEVICES********************************************/
+@media (max-height: 800px) and (min-width: 1800px) and (max-width: 2000px) {
+    :root {
+        font-size: 19px;
+    }
+
+    .logo {
+        bottom: 4.5vw;
+    }
+}
+@media (max-height: 800px) and (min-width: 1600px) and (max-width: 1800px) {
+    :root {
+        font-size: 19px;
+    }
+
+    .logo {
+        bottom: 4.5vw;
+    }
+}
+@media (max-height: 800px) and (min-width: 1400px) and (max-width: 1600px) {
+    :root {
+        font-size: 19px;
+    }
+
+    .logo {
+        bottom: 4.5vw;
+    }
+}
+@media (max-height: 800px) and (min-width: 1200px) and (max-width: 1400px) {
+    :root {
+        font-size: 19px;
+    }
+}
+@media (max-height: 800px) and (min-width: 1000px) and (max-width: 1200px) {
+    :root {
+        font-size: 16px;
+        --social-icons-width: 7%;
+    }
+
+    .logo {
+        width: 130%;
+        bottom: 5vw;
+        right: 18%;
+    }
+}
+@media (max-height: 800px) and (min-width: 800px) and (max-width: 1000px) {
+    :root {
+        font-size: 16px;
+        --social-icons-width: 7%;
+    }
+
+    .logo {
+        width: 130%;
+        bottom: 5vw;
+        right: 18%;
+    }
+}
+@media (max-height: 800px) and (min-width: 700px) and (max-width: 800px) {
+    :root {
+        font-size: 16px;
+        --social-icons-width: 7%;
+    }
+
+    .logo {
+        width: 130%;
+        bottom: 5vw;
+        right: 18%;
+    }
+}
+@media (max-height: 800px) and (min-width: 500px) and (max-width: 700px) {
+    :root {
+        font-size: 12px;
+        --social-icons-width: 10.5%;
+        --bottom-nav-font-size: 1.5rem;
+    }
+    .logo {
+        width: 200%;
+        bottom: 10.5vw !important;
+        right: 53%;
+    }
+}
+@media (max-height: 800px) and (min-width: 400px) and (max-width: 500px) {
+    :root {
+        font-size: 12.7px;
+        --social-icons-width: 13%;
+        --bottom-nav-font-size: 1.4rem;
+    }
+
+    .logo {
+        width: 275%;
+        bottom: 14vw !important;
+        right: 90%;
+    }
+}
+@media (max-height: 800px) and (min-width: 200px) and (max-width: 400px) {
+    :root {
+        font-size: 11px;
+        --social-icons-width: 11%;
+        --bottom-nav-font-size: 1.4rem;
+        --fa-font-size: 3vh;
+    }
+
+    .logo {
+        width: 250%;
+        bottom: 12vw !important;
+        right: 78.5%;
+    }
+}
+
+
+/******LOSE BANNERS**********/
+@media (max-aspect-ratio: 32/23) {
+    :root {
+        --center-strip-width: 100vw;
+    }
+    .left-strip, .right-strip {
+        display: none;
+    }
+    body {
+        width: var(--center-strip-width, 100vw);
+    }
+    .navbar-container {
+        width: var(--center-strip-width, 100vw);
+    }
+    .nav-energy {
+        width: var(--center-strip-width, 100vw);
+        right: 0;
+    }
+
+    .logo {
+        bottom: 7vw;
+    }
+
+}
+/******ADD BOTTOM-NAV*********/
+@media (max-width: 700px) {
+    :root {
+        --bottom-nav-height: 7vh;
+        --footer1-margin: 6%;
+    }
+
+    .nav-left, .nav-right {
+        display: none;
+    }
+
+    .hero-container {
+        height: 47vh;
+    }
+
+    .center-strip {
+        margin-bottom: calc(var(--bottom-nav-height));
+    }
+
+    .control-bar {
+        position: fixed;
+        bottom: 0;
+        height: var(--bottom-nav-height, 7vh);
+        width: 100%;
+        background: linear-gradient(var(--messers-blue, rgba(1, 42, 58, 0.884)), var(--messers-purple, rgba(48, 1, 34, 0.945))), url(../IMG/test/StarrySky[09].gif);
+        background-position: center;
+        background-size: cover;
+        z-index: 10;
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
+        padding: 0;
+    }
+    .control-bar a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 0.25rem;
+    }
+    .control-bar a i, .control-bar a span {
+        font-size: var(--bottom-nav-font-size);
+    }
+}
+
+/*Media Queries*/    /*Media Queries*/    /*Media Queries*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**Scrollbar**/   /**Scrollbar**/   /**Scrollbar**/
+body::-webkit-scrollbar {
+    width: 9px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(78, 2, 31);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(184, 121, 6);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(0, 0, 0);  /* creates padding around scroll thumb */
+  }
