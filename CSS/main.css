@@ -66,7 +66,6 @@ body {
 /*SideBanners*/ /*SideBanners*/ /*SideBanners*/ /*SideBanners*/
 
 .center-strip {
-    border: 2.33px dashed black;
     width: var(--center-strip-width, 75vw);
     margin: auto auto;
     position: relative;
@@ -76,7 +75,6 @@ body {
 .navbar-container {
     position: fixed;
     top: 0;
-    border: 1px solid black;
     width: var(--center-strip-width, 75vw);
     height: var(--nav-height, 14.409221902017292vh);
     padding: 0;
@@ -87,7 +85,6 @@ body {
 
 .nav-energy {
     position: fixed;
-    border: 1px solid pink;
     height: var(--nav-energy-height, 3.602305475504323vh);
     width: var(--center-strip-width, 75vw);
     right: 12.5%;
@@ -98,7 +95,6 @@ body {
 }
 
 .navbar {
-    border: 2px solid green;
     width: 100%;
     height: 75%;
     position: relative;
@@ -110,7 +106,6 @@ body {
 }
 
 .nav-left {
-    border: 2px solid black;
     width: 39%;
     display: flex;
     justify-content: space-evenly;
@@ -119,7 +114,6 @@ body {
 .logo-container {
     position: relative;
     margin: auto auto;
-    border: 2px dashed rgb(20, 199, 35) !important;
     width: 22%;
     height: 100%;
     overflow: visible;
@@ -143,7 +137,6 @@ body {
 }
 
 .nav-right {
-    border: 2px solid black;
     width: 39%;
     display: flex;
     justify-content: space-evenly;
@@ -158,7 +151,7 @@ body {
     width: 100%;
     height: 77vh;
     top: 14vh;
-    background: black;
+    background: url(../IMG/test/StarrySky[09].gif);
 }
 .hero-container .gradient {
     display: block;
@@ -179,7 +172,6 @@ body {
 
 /***MAIN***/    /***MAIN***/    /***MAIN***/    /***MAIN***/
 .some-content {
-    border: 4px solid rgb(117, 1, 1);
     position: relative;
     top: 14vh;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../IMG/test/vaporwave[06].jpg);
@@ -187,7 +179,6 @@ body {
 }
 
 .messer-who {
-    border: 3px solid green !important;
     width: 100%;
     height: var(--section-height);
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url();
@@ -197,7 +188,6 @@ body {
 }
 
 .messer-who h1 {
-    border: 2px dashed whitesmoke;
     text-align: center;
     font-size: 3.75rem;
     color: rgb(197, 161, 161);
@@ -212,7 +202,6 @@ body {
 }
 
 .messer-who p {
-    border: 2px solid whitesmoke;
     width: var(--paragraph-width, 66%);
     margin: auto auto;
     margin-top: 3%;
@@ -222,19 +211,24 @@ body {
     font-size: var(--paragraph-font-size, 3.7vh);
 }
 
+.messer-who p span {
+    font-family: solaris;
+    font-size: calc(var(--paragraph-width) * .9);
+    font-weight: 25s;
+    color: rgb(228, 233, 250);
+}
+
 /**PhotoGal**/  /**PhotoGal**/  /**PhotoGal**/  /**PhotoGal**/
 .PhotoGal {
     position: relative;
     height: var(--photo-gal-height);
     width: 100%;
     margin-bottom: var(--section-margin, 15vh);
-    border: 3px dashed violet !important;
 }
 
 .PhotoGal .swiper {
     width: var(--swiper-width, 25%);
     height: 100%;
-    border: 2px solid white;
 }
 
 .PhotoGal .swiper-slide {
@@ -303,7 +297,6 @@ body {
     position: relative;
     width: 100%;
     height: var(--section-height);
-    border: 3px dashed pink;
 }
 
 .map-container {
@@ -312,21 +305,20 @@ body {
     top: 5.5%;
     width: var(--map-container-width, 46%);
     height: 88%;
-    border: 1px solid rgb(179, 174, 168);
 }
 
 .map {
     height: 85%;
     border-radius: 10px;
     overflow: hidden;
-    border: 3px solid rgb(177, 104, 10);
+    border: 1px solid rgb(17, 10, 0);
+    box-shadow: 2px 2px 10px black;
 }
 
 .phone-number {
     margin-top: 3%;
     width: 100%;
     text-align: center;
-    border: 1px solid grey;
 }
 
 .phone-number a {
@@ -347,7 +339,6 @@ body {
     right: 1.4%;
     width: 46%;
     height: 88%;
-    border: 1px solid rgb(179, 174, 168);
     text-align: center;
 }
 
@@ -383,6 +374,7 @@ body {
 .hours a {
     font-size: 1.6rem;
     text-shadow: 0px 0px 10px rgb(255, 255, 255);
+    display: none;
 }
 
 /**FOOTER**/   /**FOOTER**/   /**FOOTER**/   /**FOOTER**/
@@ -397,11 +389,9 @@ body {
     height: var(--footer1-height, 4.322766570605188vh);
     margin-bottom: var(--footer1-margin, 0);
     text-align: center;
-    border: 1px solid beige;
 }
 
 .social-icons {
-    border: 1px solid white;
     margin: auto auto;
     padding-bottom: 0.5%;
     width: var(--social-icons-width);
@@ -456,12 +446,6 @@ body {
 
 /**FOOTER**/   /**FOOTER**/   /**FOOTER**/   /**FOOTER**/
 /***MAIN***/    /***MAIN***/    /***MAIN***/    /***MAIN***/
-
-.center-strip, .navbar-container, .navbar, .some-content, .hero-container, .logo-container,
-.nav-left, .nav-right, .messer-who, .PhotoGal, .messer-who h1, .messer-who p, .bottom-section,
-.PhotoGal .swiper, .map-container, .map, .footer1, .social-icons, .phone-number, .hours, .contact-box, .nav-energy {
-    border: 0 !important;
-}
 
 
 /*PsuedoSelectors*/    /*PsuedoSelectors*/    /*PsuedoSelectors*/

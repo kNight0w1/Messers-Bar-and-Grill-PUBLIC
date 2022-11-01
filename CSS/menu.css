@@ -150,7 +150,6 @@ body {
 /*SideBanners*/ /*SideBanners*/ /*SideBanners*/ /*SideBanners*/
 
 .center-strip {
-    border: 2.33px dashed black;
     width: var(--center-strip-width, 75vw);
     margin: auto auto;
     position: relative;
@@ -161,7 +160,6 @@ body {
 .navbar-container {
     position: fixed;
     top: 0;
-    border: 1px solid black;
     width: var(--center-strip-width, 75vw);
     height: var(--nav-height, 14.409221902017292vh);
     padding: 0;
@@ -182,7 +180,6 @@ body {
 }
 
 .navbar {
-    border: 2px solid green;
     width: 100%;
     height: 75%;
     position: relative;
@@ -194,7 +191,6 @@ body {
 }
 
 .nav-left {
-    border: 2px solid black;
     width: 39%;
     display: flex;
     justify-content: space-evenly;
@@ -203,7 +199,6 @@ body {
 .logo-container {
     position: relative;
     margin: auto auto;
-    border: 2px dashed rgb(20, 199, 35) !important;
     width: 22%;
     height: 100%;
     overflow: visible;
@@ -227,7 +222,6 @@ body {
 }
 
 .nav-right {
-    border: 2px solid black;
     width: 39%;
     display: flex;
     justify-content: space-evenly;
@@ -398,11 +392,9 @@ body {
     height: var(--footer1-height, 4.322766570605188vh);
     margin-bottom: var(--footer1-margin, 0);
     text-align: center;
-    border: 1px solid beige;
 }
 
 .social-icons {
-    border: 1px solid white;
     margin: auto auto;
     padding-bottom: 0.5%;
     width: var(--social-icons-width);
@@ -439,12 +431,6 @@ body {
 
 /**FOOTER**/   /**FOOTER**/   /**FOOTER**/   /**FOOTER**/
 /***MAIN***/    /***MAIN***/    /***MAIN***/    /***MAIN***/
-
-.center-strip, .navbar-container, .navbar, .btn, .some-content, .hero-container, .logo-container,
-.nav-left, .nav-right, .messer-who, .PhotoGal, .messer-who h1, .messer-who p, .bottom-section,
-.PhotoGal .swiper, .map-container, .map, .footer1, .social-icons, .phone-number, .hours, .adress-and-phone-bar {
-    border: 0;
-}
 
 /*PsuedoSelectors*/    /*PsuedoSelectors*/    /*PsuedoSelectors*/
 .navbar-container a:hover {
