@@ -151,7 +151,7 @@ body {
     width: 100%;
     height: 77vh;
     top: 14vh;
-    background: url(../IMG/test/StarrySky[09].gif);
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../IMG/test/StarrySky[09].gif);
 }
 .hero-container .gradient {
     display: block;
