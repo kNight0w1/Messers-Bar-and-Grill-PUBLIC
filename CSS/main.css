@@ -1096,7 +1096,7 @@ think of was to make sections smaller ********/
         --footer1-height: 4.322766570605188vh;
         --footer1-margin: 0.5vh;
         --fa-font-size: 3.3vh;
-        --social-icons-width: 17%;
+        --social-icons-width: 14%;
         --bottom-nav-height: 0vh;
         --bottom-nav-font-size: 1.4rem;
     }
@@ -1109,20 +1109,20 @@ think of was to make sections smaller ********/
 
     .messer-who h1 {
         font-size: 9.5vw;
-        height: 26vh;
-        padding-top: 1.4vh;
+        height: 31.5vh;
+        padding-top: 3vh;
     }
     .messer-who h1 span:nth-of-type(2) {
         display: block;
-        margin-top: 3.7vh;
+        margin-top: 5.7vh;
     }
     .messer-who h1 span:nth-of-type(3) {
         display: block;
-        margin-top: 3.7vh;
+        margin-top: 6.5vh;
     }
     .messer-who hr {
         border-radius: 200%;
-        margin-top: 0;
+        margin-top: 3vh;
         margin-bottom: 4vh;
     }
 

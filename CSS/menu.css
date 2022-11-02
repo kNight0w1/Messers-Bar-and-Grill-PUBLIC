@@ -778,6 +778,9 @@ think of was to make sections smaller ********/
         --social-icons-width: 17%;
         --bottom-nav-height: 0vh;
         --bottom-nav-font-size: 1.4rem;
+        --modal-width: 25vw;
+        --modal-height: 10vh;
+        --modal-font-size: 1.7rem;
     }
 
     .logo {
