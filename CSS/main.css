@@ -45,7 +45,7 @@
 }
 
 body {
-    background: url(../IMG/test/StarrySky[01].jpeg);
+    background: url(../IMG/test/StarrySky[01].webp);
 
 }
 
@@ -174,7 +174,7 @@ body {
 .some-content {
     position: relative;
     top: 14vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../IMG/test/vaporwave[06].jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../IMG/test/vaporwave[06].webp);
 
 }
 
@@ -411,7 +411,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../IMG/test/Nav/shinyMetal[01].jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../IMG/test/Nav/shinyMetal[01].webp);
     background-size: cover;
     background-position: center;
 }
